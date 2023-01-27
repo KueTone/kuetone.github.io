@@ -1,1 +1,3 @@
-# website_Johnathon_Lu
+# Portfolio Website
+
+PErsonal Website showcasing my skills and abilities through projects 
