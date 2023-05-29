@@ -1,6 +1,6 @@
 # Portfolio Website
 
-Personal Website showcasing my skills and abilities through projects 
+Welcome to my github repository for my portfolio website where I provide a brief showcase of my skills as well as my current and future projects. 
 
 Initial Setup:
 https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages
