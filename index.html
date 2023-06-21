@@ -2,247 +2,237 @@
 <html>
   <head>
     <title>Johnathon Lu | Computer Engineer</title>
-    <meta
-      name="description"
-      content="Johnathon Lu is a Computer Engineer who is interested in robotics, aeronautics, and prosthetics."
-    />
     <meta charset="utf-8" />
     <meta name="robots" content="index,follow" />
-    <link rel="icon" href="/media/Cat_icon-icons.com_52197.png" />
+    <link rel="icon" href="media/icon.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="media/bootstrap.min.css" />
     <script src="script.js"></script>
+    <script src="media/bootstrap.bundle.min.js"></script>
+    <style>
+      #intro {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh; /* Set container height to full viewport height */
+      }
+    </style> 
   </head>
 
-  <link
-    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-    rel="stylesheet"
-  />
-
-  <div class="container">
-    <button class="btn" id="btn">
-      Dropdown
-      <i class="bx bx-chevron-down" id="arrow"></i>
-    </button>
-
-    <div class="dropdown" id="dropdown">
-      <a href="#create">
-        <i class="bx bx-plus-circle"></i>
-        Create New
-      </a>
-      <a href="#draft">
-        <i class="bx bx-book"></i>
-        All Drafts
-      </a>
-      <a href="#move">
-        <i class="bx bx-folder"></i>
-        Move To
-      </a>
-      <a href="#profile">
-        <i class="bx bx-user"></i>
-        Profile Settings
-      </a>
-      <a href="#notification">
-        <i class="bx bx-bell"></i>
-        Notification
-      </a>
-      <a href="#settings">
-        <i class="bx bx-cog"></i>
-        Settings
-      </a>
-    </div>
-  </div>
-
   <body>
-    <header>
-      <h1>Personal Website</h1>
-    </header>
 
-    <h2>Navigation</h2>
-    <!-- Dropdown -->
-
-    <center>
-      <div class="wordblob-div">
-        <h1 id="about-me">About me</h1>
-        Hello! Thanks for dropping by!
-        <ul></ul>
-        My name is Johnathon Lu. I'm currently a Computer Engineer studying at
-        San Jose State University. I made this website primarily for my resume,
-        but also to give a glimpse of my life outside of study and work that
-        can't be expressed well on paper and also to track my progress on
-        projects I'm working on. A little bit about my interests, I am a home
-        cook and love cooking for myself and learning new dishes. It started as
-        just a way to save money in college and to get away from the monotony of
-        university meals, but, recently, has become a form of expression for me.
-        Speaking of form of expressions, I am also a pianist. I have been
-        playing the piano ever since I was younger, and while I don't play with
-        competitions and recitals in mind anymore, I do enjoy sitting on the
-        bench and learning a new piece. Currently, I mainly play at home in my
-        room after finishing up work.
+    <main id="intro" class="container">
+      <!-- Background Image -->
+      <!-- <div class="position-fixed top-0 start-0 w-100">
+        <img src="/media/pexels-pixabay-356968.jpg" class="img-fluid" />
+      </div> -->
+      <div class="col-12">
+        <h1>Hello,</h1> <br>
+        <h1>Johnathon here.</h1>
+        <p class = "col-8">
+          I am a prospective Computer Engineer looking for an internship in full-stack development aiming to deliver practical and elegant websites and online applications for clients.
+        </p>
       </div>
-    </center>
+    </main>
 
-    <!-- Place <div> tag where you want the feed to appear -->
-    <div id="curator-feed-default-feed-layout">
-      <a href="https://curator.io" target="_blank" class="crt-logo crt-tag"
-        >Powered by Curator.io</a
-      >
-    </div>
-    <center><h2>Scroll</h2></center>
+    <main class="container">
+      <div class="row">
 
-    <div class="background-gallary">
-      <p>Welcome to my personal website</p>
-      <img width="640" height="426" src="/media/pexels-pixabay-356968.jpg" />
-      <video autoplay loop height="250">
-        <source src="/media/cinematic_cat.mp4" />
-      </video>
-    </div>
+        <!-- Navigation Bar -->
+        <div class="col-3 px-5">
+          <div class="position-sticky" style="margin-top: 4rem;">          
+            <a id="about" class="text-decoration-none text-dark" href="#"><h1>Creator's Portfolio</h1></a>
+            <h4>Links</h4>
+            <ol class="list-unstyled">
+              <li><a id="about" class="text-decoration-none text-dark" href="#About">About Me</a></li>
+              <li><a class="text-decoration-none text-dark" href="#Projects">Projects</a></li>
+              <li><a class="text-decoration-none text-dark" href="#Hobbies">Off the Screen</a></li>
+              <div id="myText">Click me to change</div>
 
-    <h1 id="article-tab">Articles</h1>
-    <article>
-      <h2>Article 1</h2>
-      <p class="article-text">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
-        tenetur eos perspiciatis quasi distinctio sunt sequi quae nemo soluta
-        sapiente. Quam asperiores praesentium labore consequuntur et facere
-        quidem quod doloribus! Consectetur illo facere perferendis quod saepe
-        cumque, rerum placeat eum asperiores sunt, exercitationem excepturi
-        veritatis error? Consequuntur asperiores optio recusandae ea rerum,
-        dolores sit consequatur veniam cumque ipsum illo blanditiis. Eum magnam
-        illo rerum nesciunt. Praesentium beatae magni doloremque perferendis
-        voluptatem veritatis nulla iure delectus assumenda facere iste labore
-        sequi culpa vel, optio eligendi ullam officiis ea atque id
-        exercitationem? Quibusdam est distinctio sapiente mollitia perspiciatis
-        possimus reiciendis, cum sint commodi harum tempore error aliquid
-        adipisci recusandae quaerat voluptas delectus, ad odio molestiae rem
-        corporis! Delectus, mollitia a! Minima, ullam. Molestias neque eos
-        totam, enim iusto eaque, tempora non repellendus facere cupiditate ab!
-        Quasi non enim minus, id magnam necessitatibus, earum ullam architecto
-        inventore temporibus incidunt repellat vitae sit quia.
-      </p>
-      <div class="article-gallery">
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
+            </ol>
+            
+            <h5 class="fst-italic">Social Media</h5>
+            <!-- <a class="btn btn-outline-dark " href="https://github.com/KueTone" role="button"><img src = "media/github.png" width="20px" height="20px" position="relative"></img></a><a target="_blank" href="https://icons8.com/icon/106562/github">GitHub</a> -->
+            <a style="padding: 5px" target="_blank" href="https://github.com/KueTone"><img src="media/github.png" width="30px" height="30px" position="relative"></a>
+            <a style="padding: 5px" target="_blank" href="https://www.instagram.com/johnathonlu_real/"><img src="media/instagram.png" width="30px" height="30px" position="relative"></a>
+            <a style="padding: 5px" target="_blank" href="https://www.linkedin.com/in/johnathon-lu/"><img src="media/linkedin.png" width="30px" height="30px" position="relative"></a>        
+          </div>
+        </div>
+        <!-- End of Navigation Bar -->
+
+        <div class="col-md-8">
+          <center><h2>Scroll</h2></center>
+
+      
+          <!-- Place <div> tag where you want the feed to appear -->
+          <div id="curator-feed-default-feed-layout">
+            <a href="https://curator.io" target="_blank" class="crt-logo crt-tag"
+              >Powered by Curator.io</a
+            >
+          </div>
+          
+          <div class="position-static" id="About" style="padding-top: 4rem;" >
+            <center><h1 id="about-me">About me</h1></center>
+            Hello! Thanks for dropping by!
+
+            My name is Johnathon Lu. I'm currently a Computer Engineer studying at
+            San Jose State University. I made this website primarily for my resume,
+            but also to give a glimpse of my life outside of study and work that
+            can't be expressed well on paper and also to track my progress on
+            projects I'm working on. A little bit about my interests, I am a home
+            cook and love cooking for myself and learning new dishes. It started as
+            just a way to save money in college and to get away from the monotony of
+            university meals, but, recently, has become a form of expression for me.
+            Speaking of form of expressions, I am also a pianist. I have been
+            playing the piano ever since I was younger, and while I don't play with
+            competitions and recitals in mind anymore, I do enjoy sitting on the
+            bench and learning a new piece. Currently, I mainly play at home in my
+            room after finishing up work.
+          </div>
+      
+          <div class="position-relative" class="background-gallary">
+            <p>Welcome to my personal website</p>
+            <img width="640" height="426" src="/media/pexels-pixabay-356968.jpg" />
+            <video autoplay loop height="250">
+              <source src="/media/cinematic_cat.mp4" />
+            </video>
+          </div>
+      
+          <div class="position-relative" id="Projects">
+            <h1>Projects</h1>
+          <article>
+            <h2>Article 1</h2>
+            <p class="article-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
+              tenetur eos perspiciatis quasi distinctio sunt sequi quae nemo soluta
+              sapiente. Quam asperiores praesentium labore consequuntur et facere
+              quidem quod doloribus! Consectetur illo facere perferendis quod saepe
+              cumque, rerum placeat eum asperiores sunt, exercitationem excepturi
+              veritatis error? Consequuntur asperiores optio recusandae ea rerum,
+              dolores sit consequatur veniam cumque ipsum illo blanditiis. Eum magnam
+              illo rerum nesciunt. Praesentium beatae magni doloremque perferendis
+              voluptatem veritatis nulla iure delectus assumenda facere iste labore
+              sequi culpa vel, optio eligendi ullam officiis ea atque id
+              exercitationem? Quibusdam est distinctio sapiente mollitia perspiciatis
+              possimus reiciendis, cum sint commodi harum tempore error aliquid
+              adipisci recusandae quaerat voluptas delectus, ad odio molestiae rem
+              corporis! Delectus, mollitia a! Minima, ullam. Molestias neque eos
+              totam, enim iusto eaque, tempora non repellendus facere cupiditate ab!
+              Quasi non enim minus, id magnam necessitatibus, earum ullam architecto
+              inventore temporibus incidunt repellat vitae sit quia.
+            </p>
+            <div class="article-gallery">
+              <img src="" alt="" />
+              <img src="" alt="" />
+              <img src="" alt="" />
+              <img src="" alt="" />
+            </div>
+          </article>
+      
+          <article>
+            <h2>Article 2</h2>
+            <p class="article-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
+              tenetur eos perspiciatis quasi distinctio sunt sequi quae nemo soluta
+              sapiente. Quam asperiores praesentium labore consequuntur et facere
+              quidem quod doloribus! Consectetur illo facere perferendis quod saepe
+              cumque, rerum placeat eum asperiores sunt, exercitationem excepturi
+              veritatis error? Consequuntur asperiores optio recusandae ea rerum,
+              dolores sit consequatur veniam cumque ipsum illo blanditiis. Eum magnam
+              illo rerum nesciunt. Praesentium beatae magni doloremque perferendis
+              voluptatem veritatis nulla iure delectus assumenda facere iste labore
+              sequi culpa vel, optio eligendi ullam officiis ea atque id
+              exercitationem? Quibusdam est distinctio sapiente mollitia perspiciatis
+              possimus reiciendis, cum sint commodi harum tempore error aliquid
+              adipisci recusandae quaerat voluptas delectus, ad odio molestiae rem
+              corporis! Delectus, mollitia a! Minima, ullam. Molestias neque eos
+              totam, enim iusto eaque, tempora non repellendus facere cupiditate ab!
+              Quasi non enim minus, id magnam necessitatibus, earum ullam architecto
+              inventore temporibus incidunt repellat vitae sit quia.
+            </p>
+            <div class="article-gallery">
+              <img src="" alt="" />
+              <img src="" alt="" />
+              <img src="" alt="" />
+              <img src="" alt="" />
+            </div>
+          </article>
+      
+          <h3>Article 3</h3>
+          <p class="article-text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam harum illo
+            incidunt quasi, quos corporis. Reprehenderit aperiam quibusdam vel quam,
+            asperiores harum, voluptatem corporis quod aliquid veniam quis blanditiis
+            facere! Amet, dolorum cum? Esse quia, optio ut sint illo voluptatum
+            expedita ab accusamus delectus, illum consequuntur, quas quos commodi
+            totam inventore et dolorum. Dolore porro pariatur esse dicta neque
+            aliquam. Perspiciatis nulla veritatis voluptatem deleniti explicabo
+            accusamus quidem tempore fugiat cupiditate. Ex corrupti officiis,
+            temporibus repellendus reiciendis ab suscipit sunt soluta nemo ipsum
+            eveniet, eligendi perferendis. Quidem distinctio inventore a. Voluptates
+            ratione placeat, distinctio, nam repellat nemo minima facere, aut neque ab
+            possimus. Dolor corrupti rerum placeat alias porro, ab ea! Et unde
+            quibusdam, reprehenderit consequatur nemo dolore natus reiciendis? Odio
+            soluta ut quo ipsa quisquam saepe itaque, tempora, temporibus veniam
+            perspiciatis delectus earum! Esse, reiciendis? Dicta, rerum labore.
+            Temporibus iure molestias facere adipisci aperiam consectetur mollitia
+            distinctio? Illum, error.
+          </p>
+        </div>
+          <div class="article-gallery">
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+          </div>
+          <!--Contact me-->
+      
+          <a target="_blank" href="https://www.linkedin.com/in/johnathon-lu/">
+            <img width="50" src="/media/iconmonstr-linkedin-3-240.png" alt="" />
+          </a>
+      
+          <!-- The Javascript can be moved to the end of the html page before the end body tag -->
+          <script type="text/javascript">
+            /* curator-feed-default-feed-layout */
+            (function () {
+              // increase top margin for instagram feed to increase spacing between it and the about me page
+              document.getElementById(
+                "curator-feed-default-feed-layout"
+              ).style.marginTop = "50px";
+      
+              var i,
+                e,
+                d = document,
+                s = "script";
+              i = d.createElement("script");
+              i.async = 1;
+              i.charset = "UTF-8";
+              i.src =
+                "https://cdn.curator.io/published/2bf49510-9eee-4d75-8bbf-43ecfa53cd8c.js";
+              e = d.getElementsByTagName(s)[0];
+              e.parentNode.insertBefore(i, e);
+            })();
+          </script>
+        </div>
       </div>
-    </article>
+          
+    </main>
+    <script>
+      // Access the element using its ID
+      var myTextElement = document.getElementById("myText");
 
-    <article>
-      <h2>Article 2</h2>
-      <p class="article-text">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
-        tenetur eos perspiciatis quasi distinctio sunt sequi quae nemo soluta
-        sapiente. Quam asperiores praesentium labore consequuntur et facere
-        quidem quod doloribus! Consectetur illo facere perferendis quod saepe
-        cumque, rerum placeat eum asperiores sunt, exercitationem excepturi
-        veritatis error? Consequuntur asperiores optio recusandae ea rerum,
-        dolores sit consequatur veniam cumque ipsum illo blanditiis. Eum magnam
-        illo rerum nesciunt. Praesentium beatae magni doloremque perferendis
-        voluptatem veritatis nulla iure delectus assumenda facere iste labore
-        sequi culpa vel, optio eligendi ullam officiis ea atque id
-        exercitationem? Quibusdam est distinctio sapiente mollitia perspiciatis
-        possimus reiciendis, cum sint commodi harum tempore error aliquid
-        adipisci recusandae quaerat voluptas delectus, ad odio molestiae rem
-        corporis! Delectus, mollitia a! Minima, ullam. Molestias neque eos
-        totam, enim iusto eaque, tempora non repellendus facere cupiditate ab!
-        Quasi non enim minus, id magnam necessitatibus, earum ullam architecto
-        inventore temporibus incidunt repellat vitae sit quia.
-      </p>
-      <div class="article-gallery">
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
-      </div>
-    </article>
-
-    <h3>Article 3</h3>
-    <p class="article-text">
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam harum illo
-      incidunt quasi, quos corporis. Reprehenderit aperiam quibusdam vel quam,
-      asperiores harum, voluptatem corporis quod aliquid veniam quis blanditiis
-      facere! Amet, dolorum cum? Esse quia, optio ut sint illo voluptatum
-      expedita ab accusamus delectus, illum consequuntur, quas quos commodi
-      totam inventore et dolorum. Dolore porro pariatur esse dicta neque
-      aliquam. Perspiciatis nulla veritatis voluptatem deleniti explicabo
-      accusamus quidem tempore fugiat cupiditate. Ex corrupti officiis,
-      temporibus repellendus reiciendis ab suscipit sunt soluta nemo ipsum
-      eveniet, eligendi perferendis. Quidem distinctio inventore a. Voluptates
-      ratione placeat, distinctio, nam repellat nemo minima facere, aut neque ab
-      possimus. Dolor corrupti rerum placeat alias porro, ab ea! Et unde
-      quibusdam, reprehenderit consequatur nemo dolore natus reiciendis? Odio
-      soluta ut quo ipsa quisquam saepe itaque, tempora, temporibus veniam
-      perspiciatis delectus earum! Esse, reiciendis? Dicta, rerum labore.
-      Temporibus iure molestias facere adipisci aperiam consectetur mollitia
-      distinctio? Illum, error.
-    </p>
-    <div class="article-gallery">
-      <img src="" alt="" />
-      <img src="" alt="" />
-      <img src="" alt="" />
-      <img src="" alt="" />
-    </div>
-    <!--Contact me-->
-
-    <a target="_blank" href="https://www.linkedin.com/in/johnathon-lu/">
-      <img width="50" src="/media/iconmonstr-linkedin-3-240.png" alt="" />
-    </a>
-
-    <!-- <form autocomplete="off">
-      <label for="user"> Username </label>
-      <input
-        autofocus
-        maxlength="15"
-        minlength="4"
-        name="user"
-        type="text"
-        id="user"
-        placeholder="Username"
-      />
-      <label for="email"> Email Address </label>
-      <input
-        autofocus
-        maxlength="40"
-        minlength="4"
-        name="email"
-        type="email"
-        id="email"
-        placeholder="Email Address"
-      /> -->
-    <!--Type: Autochecks if it is a email or not-->
-    <!-- <select name="products" id="product">
-        <option value="">None</option>
-        <option value="Macbook 2022">Macbook 2022</option>
-        <option value="iPhone 11">iPhone 11</option>
-      </select>
-      <textarea name="messge" id="message" cols="30" rows="10"></textarea>
-      <button>Submit</button>
-    </form>
-  </body>
-</html> -->
-
-    <!-- The Javascript can be moved to the end of the html page before the end body tag -->
-    <script type="text/javascript">
-      /* curator-feed-default-feed-layout */
-      (function () {
-        // increase top margin for instagram feed to increase spacing between it and the about me page
-        document.getElementById(
-          "curator-feed-default-feed-layout"
-        ).style.marginTop = "50px";
-
-        var i,
-          e,
-          d = document,
-          s = "script";
-        i = d.createElement("script");
-        i.async = 1;
-        i.charset = "UTF-8";
-        i.src =
-          "https://cdn.curator.io/published/2bf49510-9eee-4d75-8bbf-43ecfa53cd8c.js";
-        e = d.getElementsByTagName(s)[0];
-        e.parentNode.insertBefore(i, e);
-      })();
+      // Add event listener for the 'click' event
+      myTextElement.addEventListener("click", function() {
+        // Check the current text content
+        if (myTextElement.textContent === "Text has changed!") {
+          // If the current text is "Text has changed!", change it back to the original text
+          myTextElement.textContent = "Click me to change";
+        } else {
+          // Otherwise, change the text to "Text has changed!"
+          myTextElement.textContent = "Text has changed!";
+        }
+      });
     </script>
   </body>
 </html>
