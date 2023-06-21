@@ -17,6 +17,9 @@
         justify-content: center;
         height: 100vh; /* Set container height to full viewport height */
       }
+      .sticky-offset {
+        top: 50px;
+      }
     </style> 
   </head>
 
@@ -27,12 +30,14 @@
       <!-- <div class="position-fixed top-0 start-0 w-100">
         <img src="/media/pexels-pixabay-356968.jpg" class="img-fluid" />
       </div> -->
-      <div class="col-12">
-        <h1>Hello,</h1> <br>
-        <h1>Johnathon here.</h1>
-        <p class = "col-8">
-          I am a prospective Computer Engineer looking for an internship in full-stack development aiming to deliver practical and elegant websites and online applications for clients.
-        </p>
+      <div class="row">
+        <div class="col-12">
+          <h1>Hello,</h1> <br>
+          <h1>Johnathon here.</h1>
+          <p class = "col-8">
+            I am a prospective Computer Engineer looking for an internship in full-stack development aiming to deliver practical and elegant websites and online applications for clients.
+          </p>
+        </div>
       </div>
     </main>
 
@@ -40,39 +45,27 @@
       <div class="row">
 
         <!-- Navigation Bar -->
-        <div class="col-3 px-5">
-          <div class="position-sticky" style="margin-top: 4rem;">          
-            <a id="about" class="text-decoration-none text-dark" href="#"><h1>Creator's Portfolio</h1></a>
-            <h4>Links</h4>
-            <ol class="list-unstyled">
-              <li><a id="about" class="text-decoration-none text-dark" href="#About">About Me</a></li>
-              <li><a class="text-decoration-none text-dark" href="#Projects">Projects</a></li>
-              <li><a class="text-decoration-none text-dark" href="#Hobbies">Off the Screen</a></li>
-              <div id="myText">Click me to change</div>
+        <div class="sticky-top align-self-start sticky-offset col-3 px-5">         
+          <a id="about" class="text-decoration-none text-dark" href="#"><h1>Creator's Portfolio</h1></a>
+          <h4>Links</h4>
+          <ol class="list-unstyled">
+            <li><a id="about" class="text-decoration-none text-dark" href="#About">About Me</a></li>
+            <li><a class="text-decoration-none text-dark" href="#Projects">Projects</a></li>
+            <li><a class="text-decoration-none text-dark" href="#Hobbies">Off the Screen</a></li>
+            <div id="myText">Click me to change</div>
 
-            </ol>
-            
-            <h5 class="fst-italic">Social Media</h5>
-            <!-- <a class="btn btn-outline-dark " href="https://github.com/KueTone" role="button"><img src = "media/github.png" width="20px" height="20px" position="relative"></img></a><a target="_blank" href="https://icons8.com/icon/106562/github">GitHub</a> -->
-            <a style="padding: 5px" target="_blank" href="https://github.com/KueTone"><img src="media/github.png" width="30px" height="30px" position="relative"></a>
-            <a style="padding: 5px" target="_blank" href="https://www.instagram.com/johnathonlu_real/"><img src="media/instagram.png" width="30px" height="30px" position="relative"></a>
-            <a style="padding: 5px" target="_blank" href="https://www.linkedin.com/in/johnathon-lu/"><img src="media/linkedin.png" width="30px" height="30px" position="relative"></a>        
-          </div>
+          </ol>
+          
+          <h5 class="fst-italic">Social Media</h5>
+          <!-- <a class="btn btn-outline-dark " href="https://github.com/KueTone" role="button"><img src = "media/github.png" width="20px" height="20px" position="relative"></img></a><a target="_blank" href="https://icons8.com/icon/106562/github">GitHub</a> -->
+          <a style="padding: 5px" target="_blank" href="https://github.com/KueTone"><img src="media/github.png" width="30px" height="30px" position="relative"></a>
+          <a style="padding: 5px" target="_blank" href="https://www.instagram.com/johnathonlu_real/"><img src="media/instagram.png" width="30px" height="30px" position="relative"></a>
+          <a style="padding: 5px" target="_blank" href="https://www.linkedin.com/in/johnathon-lu/"><img src="media/linkedin.png" width="30px" height="30px" position="relative"></a>
         </div>
         <!-- End of Navigation Bar -->
 
         <div class="col-md-8">
-          <center><h2>Scroll</h2></center>
-
-      
-          <!-- Place <div> tag where you want the feed to appear -->
-          <div id="curator-feed-default-feed-layout">
-            <a href="https://curator.io" target="_blank" class="crt-logo crt-tag"
-              >Powered by Curator.io</a
-            >
-          </div>
-          
-          <div class="position-static" id="About" style="padding-top: 4rem;" >
+          <div class="position-static" id="About">
             <center><h1 id="about-me">About me</h1></center>
             Hello! Thanks for dropping by!
 
@@ -90,7 +83,14 @@
             bench and learning a new piece. Currently, I mainly play at home in my
             room after finishing up work.
           </div>
-      
+
+          <!-- Place <div> tag where you want the feed to appear -->
+          <div id="curator-feed-default-feed-layout">
+            <a href="https://curator.io" target="_blank" class="crt-logo crt-tag"
+              >Powered by Curator.io</a
+            >
+          </div>
+
           <div class="position-relative" class="background-gallary">
             <p>Welcome to my personal website</p>
             <img width="640" height="426" src="/media/pexels-pixabay-356968.jpg" />
@@ -179,45 +179,34 @@
             Temporibus iure molestias facere adipisci aperiam consectetur mollitia
             distinctio? Illum, error.
           </p>
-        </div>
-          <div class="article-gallery">
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
           </div>
-          <!--Contact me-->
-      
-          <a target="_blank" href="https://www.linkedin.com/in/johnathon-lu/">
-            <img width="50" src="/media/iconmonstr-linkedin-3-240.png" alt="" />
-          </a>
-      
-          <!-- The Javascript can be moved to the end of the html page before the end body tag -->
-          <script type="text/javascript">
-            /* curator-feed-default-feed-layout */
-            (function () {
-              // increase top margin for instagram feed to increase spacing between it and the about me page
-              document.getElementById(
-                "curator-feed-default-feed-layout"
-              ).style.marginTop = "50px";
-      
-              var i,
-                e,
-                d = document,
-                s = "script";
-              i = d.createElement("script");
-              i.async = 1;
-              i.charset = "UTF-8";
-              i.src =
-                "https://cdn.curator.io/published/2bf49510-9eee-4d75-8bbf-43ecfa53cd8c.js";
-              e = d.getElementsByTagName(s)[0];
-              e.parentNode.insertBefore(i, e);
-            })();
-          </script>
         </div>
       </div>
           
     </main>
+
+    <script type="text/javascript">
+      /* curator-feed-default-feed-layout */
+      (function () {
+        // increase top margin for instagram feed to increase spacing between it and the about me page
+        document.getElementById(
+          "curator-feed-default-feed-layout"
+        ).style.marginTop = "50px";
+
+        var i,
+          e,
+          d = document,
+          s = "script";
+        i = d.createElement("script");
+        i.async = 1;
+        i.charset = "UTF-8";
+        i.src =
+          "https://cdn.curator.io/published/2bf49510-9eee-4d75-8bbf-43ecfa53cd8c.js";
+        e = d.getElementsByTagName(s)[0];
+        e.parentNode.insertBefore(i, e);
+      })();
+    </script>
+
     <script>
       // Access the element using its ID
       var myTextElement = document.getElementById("myText");
