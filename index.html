@@ -6,9 +6,7 @@
     <meta name="robots" content="index,follow" />
     <link rel="icon" href="media/icon.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="media/bootstrap.min.css" />
-    <script src="script.js"></script>
     <script src="media/bootstrap.bundle.min.js"></script>
     <style>
       #intro {
@@ -17,24 +15,62 @@
         justify-content: center;
         height: 100vh; /* Set container height to full viewport height */
       }
-      .sticky-offset {
-        top: 50px;
+      html{
+      scroll-behavior: smooth;
+      }
+      a {
+        text-decoration: none;
+        position: relative;
+        transition: color 0.3s ease-in-out;
+      }
+
+      .navTitle {
+        color: #000;
+      }
+
+      .navTitle:hover {
+        color: #000;
+        opacity: 0.5;
+      }
+
+      .navLink::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #000;
+        transform: scaleX(0);
+        transform-origin: left center;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .navLink:hover::after {
+        transform: scaleX(1);
       }
     </style> 
   </head>
 
   <body>
-
-    <main id="intro" class="container">
+    <main class="container">
       <!-- Background Image -->
       <!-- <div class="position-fixed top-0 start-0 w-100">
         <img src="/media/pexels-pixabay-356968.jpg" class="img-fluid" />
       </div> -->
-      <div class="row">
-        <div class="col-12">
+      <div class="row justify-content-start">
+        <div class="position-absolute col-12 p-1">
+          <a class="navTitle text-decoration-none text-dark" href="#">
+            <h5><b>Creator's Portfolio</b></h5>
+          </a>
+        </div>
+      </div>
+
+      <div id="intro" class="row justify-content-start">
+        <div class="col-8 ">
           <h1>Hello,</h1> <br>
           <h1>Johnathon here.</h1>
-          <p class = "col-8">
+          <p>
             I am a prospective Computer Engineer looking for an internship in full-stack development aiming to deliver practical and elegant websites and online applications for clients.
           </p>
         </div>
@@ -45,13 +81,15 @@
       <div class="row">
 
         <!-- Navigation Bar -->
-        <div class="sticky-top align-self-start sticky-offset col-3 px-5">         
-          <a id="about" class="text-decoration-none text-dark" href="#"><h1>Creator's Portfolio</h1></a>
-          <h4>Links</h4>
+        <div class="sticky-top align-self-start col-3 mx-2" style="top: 50px">         
+          <a class="navTitle text-decoration-none text-dark" href="#">
+            <h1><b>Creator's Portfolio</b></h1>
+          </a>
+          <h5>Links</h5>
           <ol class="list-unstyled">
-            <li><a id="about" class="text-decoration-none text-dark" href="#About">About Me</a></li>
-            <li><a class="text-decoration-none text-dark" href="#Projects">Projects</a></li>
-            <li><a class="text-decoration-none text-dark" href="#Hobbies">Off the Screen</a></li>
+            <li><a class="navLink text-decoration-none text-dark" href="#About">About Me</a></li>
+            <li><a class="navLink text-decoration-none text-dark" href="#Projects">Projects</a></li>
+            <li><a class="navLink text-decoration-none text-dark" href="#Hobbies">Off the Screen</a></li>
             <div id="myText">Click me to change</div>
 
           </ol>
@@ -85,7 +123,7 @@
           </div>
 
           <!-- Place <div> tag where you want the feed to appear -->
-          <div id="curator-feed-default-feed-layout">
+          <!-- <div id="curator-feed-default-feed-layout">
             <a href="https://curator.io" target="_blank" class="crt-logo crt-tag"
               >Powered by Curator.io</a
             >
@@ -97,7 +135,7 @@
             <video autoplay loop height="250">
               <source src="/media/cinematic_cat.mp4" />
             </video>
-          </div>
+          </div> -->
       
           <div class="position-relative" id="Projects">
             <h1>Projects</h1>
@@ -185,7 +223,7 @@
           
     </main>
 
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
       /* curator-feed-default-feed-layout */
       (function () {
         // increase top margin for instagram feed to increase spacing between it and the about me page
@@ -205,23 +243,6 @@
         e = d.getElementsByTagName(s)[0];
         e.parentNode.insertBefore(i, e);
       })();
-    </script>
-
-    <script>
-      // Access the element using its ID
-      var myTextElement = document.getElementById("myText");
-
-      // Add event listener for the 'click' event
-      myTextElement.addEventListener("click", function() {
-        // Check the current text content
-        if (myTextElement.textContent === "Text has changed!") {
-          // If the current text is "Text has changed!", change it back to the original text
-          myTextElement.textContent = "Click me to change";
-        } else {
-          // Otherwise, change the text to "Text has changed!"
-          myTextElement.textContent = "Text has changed!";
-        }
-      });
-    </script>
+    </script> -->
   </body>
 </html>
