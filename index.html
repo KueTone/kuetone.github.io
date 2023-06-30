@@ -6,50 +6,9 @@
     <meta name="robots" content="index,follow" />
     <link rel="icon" href="media/icon.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="media/bootstrap.min.css" />
-    <script src="media/bootstrap.bundle.min.js"></script>
-    <style>
-      #intro {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100vh; /* Set container height to full viewport height */
-      }
-      html{
-      scroll-behavior: smooth;
-      }
-      a {
-        text-decoration: none;
-        position: relative;
-        transition: color 0.3s ease-in-out;
-      }
-
-      .navTitle {
-        color: #000;
-      }
-
-      .navTitle:hover {
-        color: #000;
-        opacity: 0.5;
-      }
-
-      .navLink::after {
-        content: '';
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        height: 2px;
-        background-color: #000;
-        transform: scaleX(0);
-        transform-origin: left center;
-        transition: transform 0.3s ease-in-out;
-      }
-
-      .navLink:hover::after {
-        transform: scaleX(1);
-      }
-    </style> 
+    <link rel="stylesheet" href="static/bootstrap.min.css" />
+    <link rel="stylesheet" href="static/style.css" />
+    <script src="static/bootstrap.bundle.min.js"></script>
   </head>
 
   <body>
@@ -59,19 +18,21 @@
         <img src="/media/pexels-pixabay-356968.jpg" class="img-fluid" />
       </div> -->
       <div class="row justify-content-start">
-        <div class="position-absolute col-12 p-1">
+        <div class="position-absolute col-8 p-0 pt-3">
           <a class="navTitle text-decoration-none text-dark" href="#">
             <h5><b>Creator's Portfolio</b></h5>
           </a>
         </div>
       </div>
 
+      
+
       <div id="intro" class="row justify-content-start">
-        <div class="col-8 ">
-          <h1>Hello,</h1> <br>
+        <div class="col-8 p-0">
+          <h1>Hello,</h1>
           <h1>Johnathon here.</h1>
           <p>
-            I am a prospective Computer Engineer looking for an internship in full-stack development aiming to deliver practical and elegant websites and online applications for clients.
+            I am a aspiring Computer Engineer with a passion for front-end developement, constantly improving my skills and diving into new subjects to broaden my expertise.
           </p>
         </div>
       </div>
@@ -81,17 +42,16 @@
       <div class="row">
 
         <!-- Navigation Bar -->
-        <div class="sticky-top align-self-start col-3 mx-2" style="top: 50px">         
-          <a class="navTitle text-decoration-none text-dark" href="#">
+        <div class="sticky-top align-self-start col-3 p-0" style="top: 50px">         
+          <a class="navTitle text-decoration-none text-dark" href="index.html">
             <h1><b>Creator's Portfolio</b></h1>
           </a>
           <h5>Links</h5>
           <ol class="list-unstyled">
-            <li><a class="navLink text-decoration-none text-dark" href="#About">About Me</a></li>
-            <li><a class="navLink text-decoration-none text-dark" href="#Projects">Projects</a></li>
-            <li><a class="navLink text-decoration-none text-dark" href="#Hobbies">Off the Screen</a></li>
-            <div id="myText">Click me to change</div>
-
+            <li><a class="navLink text-decoration-none text-dark" href="about-me.html">About Me</a></li>
+            <li><a class="navLink text-decoration-none text-dark" href="about-me.html/#Experience">Experience</a></li>
+            <li><a class="navLink text-decoration-none text-dark" href="about-me.html/#Hobbies">Off the Screen</a></li>
+            <li><a class="navLink text-decoration-none text-dark" href="projects.html">Projects</a></li>
           </ol>
           
           <h5 class="fst-italic">Social Media</h5>
@@ -105,21 +65,11 @@
         <div class="col-md-8">
           <div class="position-static" id="About">
             <center><h1 id="about-me">About me</h1></center>
-            Hello! Thanks for dropping by!
+            Hello! Thanks for dropping by! <br> 
 
-            My name is Johnathon Lu. I'm currently a Computer Engineer studying at
-            San Jose State University. I made this website primarily for my resume,
-            but also to give a glimpse of my life outside of study and work that
-            can't be expressed well on paper and also to track my progress on
-            projects I'm working on. A little bit about my interests, I am a home
-            cook and love cooking for myself and learning new dishes. It started as
-            just a way to save money in college and to get away from the monotony of
-            university meals, but, recently, has become a form of expression for me.
-            Speaking of form of expressions, I am also a pianist. I have been
-            playing the piano ever since I was younger, and while I don't play with
-            competitions and recitals in mind anymore, I do enjoy sitting on the
-            bench and learning a new piece. Currently, I mainly play at home in my
-            room after finishing up work.
+            Welcome to my first website and hopefully just the start in my journey as a software developer. <br>
+
+            I have always been one to explore different subjects either as a way to express my creativity or to discover myself, be it sports, books, art, music, woodworking, robotics, and now programming. I carry these skills and experiences with me and employ them in whatever project I undertake. 
           </div>
 
           <!-- Place <div> tag where you want the feed to appear -->
