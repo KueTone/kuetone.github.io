@@ -2,17 +2,22 @@ html,
 body{
   scroll-behavior: smooth;
   background-color: #F6F1E3;
-	font-family: Arial, Helvetica, sans-serif;
+  font-family: "montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
+
 .container {
   border-style: dotted;
 }
+
 #intro {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh; /* Set container height to full viewport height */
 }
+
 a {
   text-decoration: none;
   position: relative;
@@ -47,8 +52,24 @@ a {
 
 h1 {
 	font-size: 75px;
+
 }
+
+h2 {
+  font-size: 50px;
+}
+
+h4 {
+  font-weight: 700;
+}
+
+h5 {
+  line-height: 1.5em;
+}
+
 p {
-	font-size: 15px;
-	font-family:'Times New Roman', Times, serif
+  font-family: "montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2em;
 }
