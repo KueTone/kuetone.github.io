@@ -2,8 +2,22 @@ html,
 body{
   scroll-behavior: smooth;
   background-color: #F6F1E3;
-	font-family: Arial, Helvetica, sans-serif;
+  font-family: "montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
+
+.container {
+  border-style: dotted;
+}
+
+#intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Set container height to full viewport height */
+}
+
 a {
   text-decoration: none;
   position: relative;
@@ -44,15 +58,13 @@ h1 {
 .navLink:hover::after {
   transform: scaleX(1);
 }
-#home-navBar {
-	/* auto aligns in #home container */
-	font-size: 50px;
+
+h1 {
+	font-size: 75px;
 }
-/* .col-1 {
-	border-style: dotted;	
-}
-.col-6 {
-	border-style: dotted;	
+p {
+	font-size: 15px;
+	font-family:'Times New Roman', Times, serif
 }
 .col-3 {
 	border-style: dotted;	
