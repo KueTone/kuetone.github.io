@@ -6,18 +6,6 @@ body{
   font-weight: 400;
   font-style: normal;
 }
-
-.container {
-  border-style: dotted;
-}
-
-#intro {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh; /* Set container height to full viewport height */
-}
-
 a {
   text-decoration: none;
   position: relative;
@@ -27,8 +15,15 @@ h1 {
 	font-size: 50px;
 	padding: 0px;
 }
-.container {
-  /* border-style: dotted; */
+p {
+	font-size: 15px;
+}
+
+#intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Set container height to full viewport height */
 }
 #home {
 	display: flex;
@@ -59,13 +54,32 @@ h1 {
   transform: scaleX(1);
 }
 
-h1 {
-	font-size: 75px;
+#home-title {
+	font-size: 60px;
 }
-p {
-	font-size: 15px;
-	font-family:'Times New Roman', Times, serif
+
+.home-navbar{
+  font-size: 50px;
+  /* p-5 means 1rem * 3 */
+  padding-right: 3rem;
+  transition: all 0.2s ease-in;
 }
-.col-3 {
+.home-navbar:hover {
+  color: #000;
+  opacity: 0.5;
+  padding-right: 4rem;
+}
+#pdf {
+  display: flex;
+  align-items: center;
+  
+}
+
+
+/* for looking at borders */
+/* .col-3 {
 	border-style: dotted;	
+}
+.container {
+  border-style: dotted;
 } */
