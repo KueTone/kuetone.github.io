@@ -68,16 +68,50 @@ p {
   color: #000;
   opacity: 0.5;
   padding-right: 4rem;
+  /* font-style: italic; */
 }
 #pdf {
   display: flex;
   align-items: center;
   
 }
-
+/* changing resume button color */
+.btn-outline-dark:hover, .btn-outline-dark:focus, .btn-outline-dark:active, .btn-outline-dark.active, .open>.dropdown-toggle.btn-outline-dark {
+  color: #ffffff !important;
+  background-color: #545c5e !important;
+  border-color: #000000 !important; /*set the color you want here*/
+}
+#Projects {
+  padding-top: 25%;
+}
+.projects-list {
+  font-size: 50px;
+  padding-right: 3rem;
+}
+.projects-list:hover {
+  opacity: 0.5;
+}
+.message {
+  /*temporary while its still being updated  */
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
 
 /* for looking at borders */
-/* .col-3 {
+/* .col-1 {
+	border-style: dotted;	
+}
+.col-3 {
+	border-style: dotted;	
+}
+.col-5 {
+	border-style: dotted;	
+}
+.col-6 {
+	border-style: dotted;	
+}
+.col-9 {
 	border-style: dotted;	
 }
 .container {
