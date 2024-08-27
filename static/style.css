@@ -60,14 +60,15 @@ p {
 
 .home-navbar{
   font-size: 50px;
-  /* p-5 means 1rem * 3 */
-  padding-right: 3rem;
+  right: 0px;
   transition: all 0.2s ease-in;
+  /* transition: font-size 0.2s ease-in */
 }
 .home-navbar:hover {
   color: #000;
   opacity: 0.5;
-  padding-right: 4rem;
+  right: -10px;
+  /* font-size: 55px; */
   /* font-style: italic; */
 }
 #pdf {
@@ -82,14 +83,17 @@ p {
   border-color: #000000 !important; /*set the color you want here*/
 }
 #Projects {
-  padding-top: 25%;
+  padding-top: 5%;
 }
 .projects-list {
-  font-size: 50px;
-  padding-right: 3rem;
+  font-size: 30px;
+  right: 0px;
+  transition: all 0.2s ease-in;
 }
 .projects-list:hover {
   opacity: 0.5;
+  right: -10px;
+  
 }
 .message {
   /*temporary while its still being updated  */
