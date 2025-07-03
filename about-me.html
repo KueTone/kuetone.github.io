@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
   <head>
     <title>Johnathon Lu | Computer Engineer</title>
     <meta charset="utf-8" />
@@ -15,10 +15,70 @@
   </head>
   <style>
     body {
-      padding-bottom:200px;
+      padding-bottom: 200px;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+      margin-bottom: 1rem;
+      list-style: none;
+    }
+
+    .experience-card {
+      background: "transparent";
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      border: 1px solid #e2e8f0;
+      transition: all 0.3s ease;
+    }
+
+    .experience-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .company-name {
+      color: #2d3748;
+      font-weight: 600;
+      font-size: 1.25rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .job-details {
+      color: #718096;
+      font-style: italic;
+      margin-bottom: 1rem;
+    }
+
+    .achievement-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .achievement-list li {
+      position: relative;
+      padding-left: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #4a5568;
+    }
+
+    .achievement-list li::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: #4299e1;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .highlight-number {
+      color: #4299e1;
+      font-weight: bold;
     }
   </style>
-  <body">
+  <body>
     <main class="container">
       <div class="row">
         <!-- Navigation Bar -->
@@ -103,47 +163,138 @@
               art, music, woodworking, robotics, and now programming. I carry
               these skills and experiences with me and employ them in whatever
               project I undertake.
-              <br />
-              <br />
+              <br /><br />
               During high school, I discovered my passion for creating through a
               makerspace called MakeX which exposed me to unfamiliar fields like
               aeronautics and robotics, taught me collaboration on long-term
               projects, and improved my communication abilities.
-              <br />
-              <br />
+              <br /><br />
               Though I initially hesitated to get into computer programming, I
               took the chance during COVID-19's quarantine by managing my
               robotics team's website. It introduced me to HTML, CSS, backend
               deployment, and the value of seeking help from others.
-              <br />
-              <br />
-              Fast forward to university, I chose Computer Engineer as my major
-              with a minor in Computer Science. I hope to leverage my previous
-              broad experiences in order to be a more cohesive Full-Stack
-              Developer.
+              <br /><br />
+              Fast forward to university, I chose Computer Engineer as my major.
+              I hope to leverage my previous broad experiences in order to be a
+              more cohesive Full-Stack Developer.
             </p>
           </div>
 
           <div class="position-relative" id="Resume">
-            <h4>Skills and Activites</h4>
-            <p> 
-              <b>Programming Languages:</b> C/C++, Java, Python, SQL, HTML/CSS, Javascript, React Native, Typescript
-              <br/><b>Technical Skills:</b> Cybersecurity, Mobile Development, ML/AI, Database Management, Data Analytics, Git/Github, Figma, Linux, Agile, Oscilloscope, Multimeter, Linux OS
-              <br/><b>Languages:</b> English (Native), Chinese (Conversational), Spanish (Novice)
-              <br/><b>Leadership:</b> Project Lead Spartan Racing SRE, Coach & Varsity Member of San Jose Dragonboat
-            </p>
-            <button id="pdf" type="button" class="btn btn-outline-dark">
-              <a
-                class="text-decoration-none text-dark d-flex align-items-center justify-content-center"
-                style="padding: 5px"
-                target="_blank"
-                href="media/JohnathonLuResume.pdf"
-              >
-                <img src="media/file.svg" height="20px" class="me-2" />
-                <!-- Add margin-end for spacing -->
-                <b>Resume</b>
-              </a>
-            </button>
+            <h3>Resume</h3>
+
+            <div class="position-relative" id="Experience">
+              <h4>Experience</h4>
+
+              <div class="experience-card">
+                <h5 class="company-name">San Jose Dragonboat Team</h5>
+                <p class="job-details">Head Coach | Aug 2023 - May 2025</p>
+                <ul class="achievement-list">
+                  <li>Led and developed a competitive dragonboat team of <span class="highlight-number">25+ athletes</span>, implementing structured training programs that improved team performance by <span class="highlight-number">30%</span></li>
+                  <li>Designed and deployed a modern recruitment website using HTML/CSS and JavaScript, resulting in a <span class="highlight-number">40% increase</span> in team applications and streamlining the onboarding process</li>
+                  <li>Managed team logistics, scheduling, and communication, coordinating with university administration for training facilities and competitions</li>
+                </ul>
+              </div>
+
+              <div class="experience-card">
+                <h5 class="company-name">Headstarter AI</h5>
+                <p class="job-details">Software Engineering Fellow | June 2024 - August 2024 | Remote</p>
+                <ul class="achievement-list">
+                  <li>Architected and delivered a subscription-based AI flashcard web application serving <span class="highlight-number">500+ students</span> nationwide, integrating OpenAI's GPT API, Clerk authentication, and Firebase real-time database</li>
+                  <li>Collaborated with <span class="highlight-number">50+ engineers</span> from major tech companies (Google, Amazon, Bloomberg, Instagram) to implement Agile methodologies, CI/CD pipelines, and advanced Git workflows</li>
+                  <li>Optimized application performance through code reviews and testing, achieving <span class="highlight-number">99.5% uptime</span> and reducing load times by <span class="highlight-number">35%</span></li>
+                </ul>
+              </div>
+
+              <div class="experience-card">
+                <h5 class="company-name">San Jose State University - Student Union Bowling Alley</h5>
+                <p class="job-details">Shift Supervisor | August 2021 - August 2024 | San Jose, CA</p>
+                <ul class="achievement-list">
+                  <li>Drove business growth by establishing partnerships with <span class="highlight-number">20+ student organizations</span>, coordinating joint events that increased customer attendance by <span class="highlight-number">25%</span> and generated <span class="highlight-number">$15K+</span> in additional revenue</li>
+                  <li>Supervised and mentored teams of <span class="highlight-number">5-8 student employees</span> per shift, implementing training programs that reduced onboarding time by <span class="highlight-number">40%</span> and improved customer satisfaction scores</li>
+                  <li>Streamlined operational procedures and inventory management, reducing equipment downtime by <span class="highlight-number">20%</span> and ensuring consistent service delivery during peak hours</li>
+                </ul>
+              </div>
+
+              <div class="experience-card">
+                <h5 class="company-name">Spartan Racing</h5>
+                <p class="job-details">Dashboard Project Lead | August 2021 - June 2023 | San Jose, CA</p>
+                <ul class="achievement-list">
+                  <li>Engineered a real-time heads-up display system using <span class="highlight-number">C/C++</span> and CAN bus protocol, processing <span class="highlight-number">100+ sensor data points</span> per second to enhance driver performance by <span class="highlight-number">14%</span></li>
+                  <li>Led cross-functional team of <span class="highlight-number">6 engineers</span> through complete product lifecycle, from requirements gathering to testing, contributing to team's <span class="highlight-number">4th place finish</span> in Formula SAE endurance competition</li>
+                  <li>Implemented embedded systems optimization techniques that reduced display latency by <span class="highlight-number">50%</span> and improved system reliability under racing conditions</li>
+                </ul>
+              </div>
+
+              <div class="experience-card">
+                <h5 class="company-name">MakeX</h5>
+                <p class="job-details">Project Supervisor | June 2017 - Present | Cubberly Community Center, Palo Alto, CA</p>
+                <ul class="achievement-list">
+                  <li>Mentored <span class="highlight-number">200+ children annually</span> in STEM projects using advanced fabrication tools (laser cutters, 3D printers, CAD software), fostering creativity and technical skills in the community</li>
+                  <li>Managed daily operations of a <span class="highlight-number">2,000 sq ft makerspace</span> with 6-person team, implementing safety protocols that maintained <span class="highlight-number">zero accidents</span> record over 7 years</li>
+                  <li>Developed comprehensive training curriculum for <span class="highlight-number">15+ new mentors</span>, ensuring knowledge transfer and operational continuity across summer programs</li>
+                  <li>Maintained and enhanced MakeX website with project showcases and blog posts, increasing community engagement and program enrollment by <span class="highlight-number">30%</span></li>
+                </ul>
+              </div>
+
+              <div class="experience-card">
+                <h5 class="company-name">Gunn Robotics Team</h5>
+                <p class="job-details">Member | August 2019 - Present | Gunn High School, Palo Alto, CA</p>
+                <ul class="achievement-list">
+                  <li>Designed and manufactured precision swerve drivetrain systems using CAD software and CNC machining, enabling robot to achieve <span class="highlight-number">15 ft/sec</span> maximum speed with omnidirectional movement capabilities</li>
+                  <li>Competed in <span class="highlight-number">12+ regional competitions</span> over 5 years, contributing to team's qualification for World Championships and multiple regional awards including Innovation in Control and Excellence in Engineering</li>
+                  <li>Implemented quality control processes for robot components, reducing mechanical failures during competition by <span class="highlight-number">60%</span> through systematic testing and documentation</li>
+                </ul>
+              </div>
+
+              <div class="experience-card">
+                <h5 class="company-name">Gunn Robotics Team</h5>
+                <p class="job-details">Website Developer | August 2019 - July 2021 | Palo Alto, CA</p>
+                <ul class="achievement-list">
+                  <li>Developed and maintained team website using XML, CSS, MySQL, and FileZilla, supporting <span class="highlight-number">500+ daily visitors</span> during competition season and facilitating sponsor communications</li>
+                  <li>Established coding standards and documentation practices that improved development efficiency by <span class="highlight-number">25%</span> for future team members and ensured seamless knowledge transfer</li>
+                  <li>Integrated automated content management system that reduced website update time by <span class="highlight-number">70%</span> and enabled real-time competition results posting</li>
+                </ul>
+              </div>
+
+              <div class="experience-card">
+                <h5 class="company-name">Gunn Aeronautics Association</h5>
+                <p class="job-details">Member | August 2016 - Present | Cubberly Community Center, Palo Alto, CA</p>
+                <ul class="achievement-list">
+                  <li>Managed annual budget of <span class="highlight-number">$8,000+</span> and secured sponsorships from local businesses, reducing project costs by <span class="highlight-number">35%</span> and enabling monthly rocket launches for American Rocketry Competition</li>
+                  <li>Collaborated with <span class="highlight-number">15-member team</span> to design, build, and successfully launch <span class="highlight-number">24+ model rockets</span>, achieving consistent altitude targets within <span class="highlight-number">5% accuracy</span> using aerodynamic modeling and flight simulation software</li>
+                  <li>Coordinated logistics for monthly test launches at FAA-approved sites in Sacramento and Farmington, maintaining <span class="highlight-number">100% safety compliance</span> record over 5 years of operations</li>
+                </ul>
+              </div>
+            </div>
+
+            <h4>Education</h4>
+            <div class="experience-card">
+              <p>
+                <b>San Jose State University, College of Engineering</b><br />
+                B.S., Computer Engineering, <span class="highlight-number">Cum Laude '25</span><br />
+                <b>GPA:</b> <span class="highlight-number">3.7/4.0</span><br />
+                Honors: Graduated Cum Laude '25<br /><br />
+                <b>Relevant Coursework:</b> Data Structures and Algorithms, Software
+                Engineering I, Digital Design II, Computer Networking, Advanced
+                Algorithm Design, Microprocessor Design I, Operating Systems,
+                Software Project Management, Compiler Design, Machine Learning,
+                Real Time Embedded Co-Design, Database Systems 1, Advanced
+                Practical Computing Topics: Ocean Modeling
+              </p>
+
+              <p>
+                <b>Programming Languages:</b> C/C++, Java, Python, SQL, HTML/CSS,
+                Javascript, React Native, Typescript<br />
+                <b>Technical Skills:</b> Mobile Development, ML/AI, Database
+                Management, Data Analytics, Git/Github, Figma, Linux, Agile,
+                Oscilloscope, Multimeter, Linux OS<br />
+                <b>Languages:</b> English (Native), Chinese (Conversational),
+                Spanish (Novice)<br />
+                <b>Leadership:</b> Project Lead Spartan Racing SRE, Coach &
+                Varsity Member of San Jose Dragonboat
+              </p>
+            </div>
           </div>
         </div>
       </div>
