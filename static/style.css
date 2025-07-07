@@ -56,10 +56,12 @@ p {
 
 #home-title {
 	font-size: 60px;
+  font-size: 4vw;
+
 }
 
 .home-navbar{
-  font-size: 50px;
+  font-size: 3vw;
   right: 0px;
   transition: all 0.2s ease-in;
   /* transition: font-size 0.2s ease-in */
