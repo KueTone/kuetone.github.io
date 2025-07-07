@@ -25,7 +25,7 @@
     }
 
     .experience-card {
-      background: "transparent";
+      background: transparent;
       border-radius: 10px;
       padding: 1.5rem;
       margin-bottom: 1.5rem;
@@ -65,7 +65,7 @@
     }
 
     .achievement-list li::before {
-      content: '•';
+      content: "•";
       position: absolute;
       left: 0;
       color: #4299e1;
@@ -77,13 +77,24 @@
       color: #4299e1;
       font-weight: bold;
     }
+    .side-navbar {
+  display: block; /* Force vertical stacking */
+  top: 50px;
+}
+
+@media (max-width: 768px) {
+  .side-navbar.sticky-top {
+    position: static !important;
+    top: auto !important;
+  }
+}
   </style>
   <body>
     <main class="container">
       <div class="row">
         <!-- Navigation Bar -->
         <div
-          class="sticky-top align-self-start col-3 p-0 pt-5"
+          class="side-navbar  sticky-top align-self-start col-lg-3 p-0 pt-5"
           style="top: 50px"
         >
           <a class="navTitle text-decoration-none text-dark" href="index.html">
@@ -91,7 +102,7 @@
               <b>Creator's<br />Portfolio</b>
             </h2>
           </a>
-          <h4>Links</h4>
+          <!-- <h4>Links</h4> -->
           <ol class="list-unstyled">
             <li>
               <a class="navLink text-decoration-none text-dark" href="#"
@@ -143,8 +154,7 @@
           </a>
         </div>
         <!-- End of Navigation Bar -->
-
-        <div class="col-lg-8 pt-5">
+        <div class="col pt-5">
           <div class="position-static" id="About">
             <img
               src="media/icon.jpg"
@@ -180,7 +190,7 @@
             </p>
           </div>
 
-          <div class="position-relative" id="Resume">
+          <div class="position-relative col" id="Resume">
             <h3>Resume</h3>
 
             <div class="position-relative" id="Experience">
@@ -190,80 +200,249 @@
                 <h5 class="company-name">San Jose Dragonboat Team</h5>
                 <p class="job-details">Head Coach | Aug 2023 - May 2025</p>
                 <ul class="achievement-list">
-                  <li>Led and developed a competitive dragonboat team of <span class="highlight-number">25+ athletes</span>, implementing structured training programs that improved team performance by <span class="highlight-number">30%</span></li>
-                  <li>Designed and deployed a modern recruitment website using HTML/CSS and JavaScript, resulting in a <span class="highlight-number">40% increase</span> in team applications and streamlining the onboarding process</li>
-                  <li>Managed team logistics, scheduling, and communication, coordinating with university administration for training facilities and competitions</li>
+                  <li>
+                    Led and developed a competitive dragonboat team of
+                    <span class="highlight-number">25+ athletes</span>,
+                    implementing structured training programs that improved team
+                    performance by <span class="highlight-number">30%</span>
+                  </li>
+                  <li>
+                    Designed and deployed a modern recruitment website using
+                    HTML/CSS and JavaScript, resulting in a
+                    <span class="highlight-number">40% increase</span> in team
+                    applications and streamlining the onboarding process
+                  </li>
+                  <li>
+                    Managed team logistics, scheduling, and communication,
+                    coordinating with university administration for training
+                    facilities and competitions
+                  </li>
                 </ul>
               </div>
 
               <div class="experience-card">
                 <h5 class="company-name">Headstarter AI</h5>
-                <p class="job-details">Software Engineering Fellow | June 2024 - August 2024 | Remote</p>
+                <p class="job-details">
+                  Software Engineering Fellow | June 2024 - August 2024 | Remote
+                </p>
                 <ul class="achievement-list">
-                  <li>Architected and delivered a subscription-based AI flashcard web application serving <span class="highlight-number">500+ students</span> nationwide, integrating OpenAI's GPT API, Clerk authentication, and Firebase real-time database</li>
-                  <li>Collaborated with <span class="highlight-number">50+ engineers</span> from major tech companies (Google, Amazon, Bloomberg, Instagram) to implement Agile methodologies, CI/CD pipelines, and advanced Git workflows</li>
-                  <li>Optimized application performance through code reviews and testing, achieving <span class="highlight-number">99.5% uptime</span> and reducing load times by <span class="highlight-number">35%</span></li>
+                  <li>
+                    Architected and delivered a subscription-based AI flashcard
+                    web application serving
+                    <span class="highlight-number">500+ students</span>
+                    nationwide, integrating OpenAI's GPT API, Clerk
+                    authentication, and Firebase real-time database
+                  </li>
+                  <li>
+                    Collaborated with
+                    <span class="highlight-number">50+ engineers</span> from
+                    major tech companies (Google, Amazon, Bloomberg, Instagram)
+                    to implement Agile methodologies, CI/CD pipelines, and
+                    advanced Git workflows
+                  </li>
+                  <li>
+                    Optimized application performance through code reviews and
+                    testing, achieving
+                    <span class="highlight-number">99.5% uptime</span> and
+                    reducing load times by
+                    <span class="highlight-number">35%</span>
+                  </li>
                 </ul>
               </div>
 
               <div class="experience-card">
-                <h5 class="company-name">San Jose State University - Student Union Bowling Alley</h5>
-                <p class="job-details">Shift Supervisor | August 2021 - August 2024 | San Jose, CA</p>
+                <h5 class="company-name">
+                  San Jose State University - Student Union Bowling Alley
+                </h5>
+                <p class="job-details">
+                  Shift Supervisor | August 2021 - August 2024 | San Jose, CA
+                </p>
                 <ul class="achievement-list">
-                  <li>Drove business growth by establishing partnerships with <span class="highlight-number">20+ student organizations</span>, coordinating joint events that increased customer attendance by <span class="highlight-number">25%</span> and generated <span class="highlight-number">$15K+</span> in additional revenue</li>
-                  <li>Supervised and mentored teams of <span class="highlight-number">5-8 student employees</span> per shift, implementing training programs that reduced onboarding time by <span class="highlight-number">40%</span> and improved customer satisfaction scores</li>
-                  <li>Streamlined operational procedures and inventory management, reducing equipment downtime by <span class="highlight-number">20%</span> and ensuring consistent service delivery during peak hours</li>
+                  <li>
+                    Drove business growth by establishing partnerships with
+                    <span class="highlight-number"
+                      >20+ student organizations</span
+                    >, coordinating joint events that increased customer
+                    attendance by <span class="highlight-number">25%</span> and
+                    generated <span class="highlight-number">$15K+</span> in
+                    additional revenue
+                  </li>
+                  <li>
+                    Supervised and mentored teams of
+                    <span class="highlight-number">5-8 student employees</span>
+                    per shift, implementing training programs that reduced
+                    onboarding time by
+                    <span class="highlight-number">40%</span> and improved
+                    customer satisfaction scores
+                  </li>
+                  <li>
+                    Streamlined operational procedures and inventory management,
+                    reducing equipment downtime by
+                    <span class="highlight-number">20%</span> and ensuring
+                    consistent service delivery during peak hours
+                  </li>
                 </ul>
               </div>
 
               <div class="experience-card">
                 <h5 class="company-name">Spartan Racing</h5>
-                <p class="job-details">Dashboard Project Lead | August 2021 - June 2023 | San Jose, CA</p>
+                <p class="job-details">
+                  Dashboard Project Lead | August 2021 - June 2023 | San Jose,
+                  CA
+                </p>
                 <ul class="achievement-list">
-                  <li>Engineered a real-time heads-up display system using <span class="highlight-number">C/C++</span> and CAN bus protocol, processing <span class="highlight-number">100+ sensor data points</span> per second to enhance driver performance by <span class="highlight-number">14%</span></li>
-                  <li>Led cross-functional team of <span class="highlight-number">6 engineers</span> through complete product lifecycle, from requirements gathering to testing, contributing to team's <span class="highlight-number">4th place finish</span> in Formula SAE endurance competition</li>
-                  <li>Implemented embedded systems optimization techniques that reduced display latency by <span class="highlight-number">50%</span> and improved system reliability under racing conditions</li>
+                  <li>
+                    Engineered a real-time heads-up display system using
+                    <span class="highlight-number">C/C++</span> and CAN bus
+                    protocol, processing
+                    <span class="highlight-number"
+                      >100+ sensor data points</span
+                    >
+                    per second to enhance driver performance by
+                    <span class="highlight-number">14%</span>
+                  </li>
+                  <li>
+                    Led cross-functional team of
+                    <span class="highlight-number">6 engineers</span> through
+                    complete product lifecycle, from requirements gathering to
+                    testing, contributing to team's
+                    <span class="highlight-number">4th place finish</span> in
+                    Formula SAE endurance competition
+                  </li>
+                  <li>
+                    Implemented embedded systems optimization techniques that
+                    reduced display latency by
+                    <span class="highlight-number">50%</span> and improved
+                    system reliability under racing conditions
+                  </li>
                 </ul>
               </div>
 
               <div class="experience-card">
                 <h5 class="company-name">MakeX</h5>
-                <p class="job-details">Project Supervisor | June 2017 - Present | Cubberly Community Center, Palo Alto, CA</p>
+                <p class="job-details">
+                  Project Supervisor | June 2017 - Present | Cubberly Community
+                  Center, Palo Alto, CA
+                </p>
                 <ul class="achievement-list">
-                  <li>Mentored <span class="highlight-number">200+ children annually</span> in STEM projects using advanced fabrication tools (laser cutters, 3D printers, CAD software), fostering creativity and technical skills in the community</li>
-                  <li>Managed daily operations of a <span class="highlight-number">2,000 sq ft makerspace</span> with 6-person team, implementing safety protocols that maintained <span class="highlight-number">zero accidents</span> record over 7 years</li>
-                  <li>Developed comprehensive training curriculum for <span class="highlight-number">15+ new mentors</span>, ensuring knowledge transfer and operational continuity across summer programs</li>
-                  <li>Maintained and enhanced MakeX website with project showcases and blog posts, increasing community engagement and program enrollment by <span class="highlight-number">30%</span></li>
+                  <li>
+                    Mentored
+                    <span class="highlight-number">200+ children annually</span>
+                    in STEM projects using advanced fabrication tools (laser
+                    cutters, 3D printers, CAD software), fostering creativity
+                    and technical skills in the community
+                  </li>
+                  <li>
+                    Managed daily operations of a
+                    <span class="highlight-number">2,000 sq ft makerspace</span>
+                    with 6-person team, implementing safety protocols that
+                    maintained
+                    <span class="highlight-number">zero accidents</span> record
+                    over 7 years
+                  </li>
+                  <li>
+                    Developed comprehensive training curriculum for
+                    <span class="highlight-number">15+ new mentors</span>,
+                    ensuring knowledge transfer and operational continuity
+                    across summer programs
+                  </li>
+                  <li>
+                    Maintained and enhanced MakeX website with project showcases
+                    and blog posts, increasing community engagement and program
+                    enrollment by <span class="highlight-number">30%</span>
+                  </li>
                 </ul>
               </div>
 
               <div class="experience-card">
                 <h5 class="company-name">Gunn Robotics Team</h5>
-                <p class="job-details">Member | August 2019 - Present | Gunn High School, Palo Alto, CA</p>
+                <p class="job-details">
+                  Member | August 2019 - Present | Gunn High School, Palo Alto,
+                  CA
+                </p>
                 <ul class="achievement-list">
-                  <li>Designed and manufactured precision swerve drivetrain systems using CAD software and CNC machining, enabling robot to achieve <span class="highlight-number">15 ft/sec</span> maximum speed with omnidirectional movement capabilities</li>
-                  <li>Competed in <span class="highlight-number">12+ regional competitions</span> over 5 years, contributing to team's qualification for World Championships and multiple regional awards including Innovation in Control and Excellence in Engineering</li>
-                  <li>Implemented quality control processes for robot components, reducing mechanical failures during competition by <span class="highlight-number">60%</span> through systematic testing and documentation</li>
+                  <li>
+                    Designed and manufactured precision swerve drivetrain
+                    systems using CAD software and CNC machining, enabling robot
+                    to achieve
+                    <span class="highlight-number">15 ft/sec</span> maximum
+                    speed with omnidirectional movement capabilities
+                  </li>
+                  <li>
+                    Competed in
+                    <span class="highlight-number"
+                      >12+ regional competitions</span
+                    >
+                    over 5 years, contributing to team's qualification for World
+                    Championships and multiple regional awards including
+                    Innovation in Control and Excellence in Engineering
+                  </li>
+                  <li>
+                    Implemented quality control processes for robot components,
+                    reducing mechanical failures during competition by
+                    <span class="highlight-number">60%</span> through systematic
+                    testing and documentation
+                  </li>
                 </ul>
               </div>
 
               <div class="experience-card">
                 <h5 class="company-name">Gunn Robotics Team</h5>
-                <p class="job-details">Website Developer | August 2019 - July 2021 | Palo Alto, CA</p>
+                <p class="job-details">
+                  Website Developer | August 2019 - July 2021 | Palo Alto, CA
+                </p>
                 <ul class="achievement-list">
-                  <li>Developed and maintained team website using XML, CSS, MySQL, and FileZilla, supporting <span class="highlight-number">500+ daily visitors</span> during competition season and facilitating sponsor communications</li>
-                  <li>Established coding standards and documentation practices that improved development efficiency by <span class="highlight-number">25%</span> for future team members and ensured seamless knowledge transfer</li>
-                  <li>Integrated automated content management system that reduced website update time by <span class="highlight-number">70%</span> and enabled real-time competition results posting</li>
+                  <li>
+                    Developed and maintained team website using XML, CSS, MySQL,
+                    and FileZilla, supporting
+                    <span class="highlight-number">500+ daily visitors</span>
+                    during competition season and facilitating sponsor
+                    communications
+                  </li>
+                  <li>
+                    Established coding standards and documentation practices
+                    that improved development efficiency by
+                    <span class="highlight-number">25%</span> for future team
+                    members and ensured seamless knowledge transfer
+                  </li>
+                  <li>
+                    Integrated automated content management system that reduced
+                    website update time by
+                    <span class="highlight-number">70%</span> and enabled
+                    real-time competition results posting
+                  </li>
                 </ul>
               </div>
 
               <div class="experience-card">
                 <h5 class="company-name">Gunn Aeronautics Association</h5>
-                <p class="job-details">Member | August 2016 - Present | Cubberly Community Center, Palo Alto, CA</p>
+                <p class="job-details">
+                  Member | August 2016 - Present | Cubberly Community Center,
+                  Palo Alto, CA
+                </p>
                 <ul class="achievement-list">
-                  <li>Managed annual budget of <span class="highlight-number">$8,000+</span> and secured sponsorships from local businesses, reducing project costs by <span class="highlight-number">35%</span> and enabling monthly rocket launches for American Rocketry Competition</li>
-                  <li>Collaborated with <span class="highlight-number">15-member team</span> to design, build, and successfully launch <span class="highlight-number">24+ model rockets</span>, achieving consistent altitude targets within <span class="highlight-number">5% accuracy</span> using aerodynamic modeling and flight simulation software</li>
-                  <li>Coordinated logistics for monthly test launches at FAA-approved sites in Sacramento and Farmington, maintaining <span class="highlight-number">100% safety compliance</span> record over 5 years of operations</li>
+                  <li>
+                    Managed annual budget of
+                    <span class="highlight-number">$8,000+</span> and secured
+                    sponsorships from local businesses, reducing project costs
+                    by <span class="highlight-number">35%</span> and enabling
+                    monthly rocket launches for American Rocketry Competition
+                  </li>
+                  <li>
+                    Collaborated with
+                    <span class="highlight-number">15-member team</span> to
+                    design, build, and successfully launch
+                    <span class="highlight-number">24+ model rockets</span>,
+                    achieving consistent altitude targets within
+                    <span class="highlight-number">5% accuracy</span> using
+                    aerodynamic modeling and flight simulation software
+                  </li>
+                  <li>
+                    Coordinated logistics for monthly test launches at
+                    FAA-approved sites in Sacramento and Farmington, maintaining
+                    <span class="highlight-number">100% safety compliance</span>
+                    record over 5 years of operations
+                  </li>
                 </ul>
               </div>
             </div>
@@ -272,20 +451,21 @@
             <div class="experience-card">
               <p>
                 <b>San Jose State University, College of Engineering</b><br />
-                B.S., Computer Engineering, <span class="highlight-number">Cum Laude '25</span><br />
+                B.S., Computer Engineering,
+                <span class="highlight-number">Cum Laude '25</span><br />
                 <b>GPA:</b> <span class="highlight-number">3.7/4.0</span><br />
                 Honors: Graduated Cum Laude '25<br /><br />
-                <b>Relevant Coursework:</b> Data Structures and Algorithms, Software
-                Engineering I, Digital Design II, Computer Networking, Advanced
-                Algorithm Design, Microprocessor Design I, Operating Systems,
-                Software Project Management, Compiler Design, Machine Learning,
-                Real Time Embedded Co-Design, Database Systems 1, Advanced
-                Practical Computing Topics: Ocean Modeling
+                <b>Relevant Coursework:</b> Data Structures and Algorithms,
+                Software Engineering I, Digital Design II, Computer Networking,
+                Advanced Algorithm Design, Microprocessor Design I, Operating
+                Systems, Software Project Management, Compiler Design, Machine
+                Learning, Real Time Embedded Co-Design, Database Systems 1,
+                Advanced Practical Computing Topics: Ocean Modeling
               </p>
 
               <p>
-                <b>Programming Languages:</b> C/C++, Java, Python, SQL, HTML/CSS,
-                Javascript, React Native, Typescript<br />
+                <b>Programming Languages:</b> C/C++, Java, Python, SQL,
+                HTML/CSS, Javascript, React Native, Typescript<br />
                 <b>Technical Skills:</b> Mobile Development, ML/AI, Database
                 Management, Data Analytics, Git/Github, Figma, Linux, Agile,
                 Oscilloscope, Multimeter, Linux OS<br />

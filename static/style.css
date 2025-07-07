@@ -104,6 +104,17 @@ p {
   right: 0px;
 }
 
+.side-navbar {
+  /* top: 50px */
+}
+
+
+@media (max-width: 768px) {
+  .side-navbar.sticky-top {
+    position: static !important; /* Disable sticky on mobile */
+    top: auto !important; /* Reset top offset */
+  }
+}
 /* for looking at borders */
 /* .col-1 {
 	border-style: dotted;	
